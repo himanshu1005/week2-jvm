@@ -11,11 +11,11 @@ public class HeapDumpMemLeakChk {
 
         //Remove the arraylist to avoid the unnecessary adding
 
-		List<ObjectForLeak> leak = new ArrayList<>();
-
-		for (int i = 0; i < 10000000; i++) {
-			leak.add(new ObjectForLeak());
-		}
+//		List<ObjectForLeak> leak = new ArrayList<>();
+//
+//		for (int i = 0; i < 1000000; i++) {
+//			leak.add(new ObjectForLeak());
+//		}
 
         System.out.println("Post Object creation to check Memory Leak");
     }
