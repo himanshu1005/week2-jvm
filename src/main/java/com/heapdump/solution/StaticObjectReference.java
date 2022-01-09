@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class StaticObjectReference {
 
-	public static final ArrayList<Double> list = new ArrayList<Double>(1000000);
+	public static ArrayList<Double> list = new ArrayList<Double>(1000000);
 
 	public static void main(String[] args) throws InterruptedException {
 
@@ -13,6 +13,7 @@ public class StaticObjectReference {
 		for (int i = 0; i < 1000000; i++) {
 			list.add(random.nextDouble());
 		}
+		list = null;
 		System.gc();
 		Thread.sleep(10000); // to allow GC do its job
 	}

@@ -1,7 +1,5 @@
 package com.heapdump.analysis;
 
-import com.heapdump.solution.Key;
-
 import java.util.Map;
 
 public class HashMapWithoutEqualAndHashcode {

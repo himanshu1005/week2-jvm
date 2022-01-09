@@ -5,16 +5,19 @@ import java.util.List;
 
 public class HeapDumpMemLeakChk {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		System.out.println("Inside main");
-		List<com.heapdump.solution.ObjectForLeak> leak = new ArrayList<>();
+        System.out.println("Inside main");
 
-		for (int i = 0; i < 1000000; i++) {
+        //Remove the arraylist to avoid the unnecessary adding
+
+		List<ObjectForLeak> leak = new ArrayList<>();
+
+		for (int i = 0; i < 10000000; i++) {
 			leak.add(new ObjectForLeak());
 		}
 
-		System.out.println("Post Object creation to check Memory Leak");
-	}
+        System.out.println("Post Object creation to check Memory Leak");
+    }
 
 }

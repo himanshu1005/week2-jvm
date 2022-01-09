@@ -10,6 +10,7 @@ public class OutOFMemoryHeapDump {
 		
 		while(true) {
 			leak.add(new ObjectForLeak());
+			break;
 		}
 	}
 
