@@ -1,4 +1,4 @@
-package com.heapdump.analysis;
+package com.heapdump.solution;
 public class Key {
     public static String key;
     
